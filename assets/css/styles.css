@@ -11,11 +11,12 @@ body{
 .card-shadow{
     box-shadow: 0 5px 16px 0 rgba(8, 15, 52, 0.07) !important;
     transition: all 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+    border-radius: 5%;
 }
 
 .containerise{
     margin: auto;
-    width: 80%;
+    width: 60%;
     padding-bottom: 10%;
 }
 
@@ -26,27 +27,52 @@ body{
     margin-bottom: 4%;
 }
 
-.cards-container{
+.cards-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
 }
+
 
 .cards-container > div{
-    width: 32%;
-    border-radius: 15px;
-    background: white;
+    width: 31%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
 }
 
+#post-1 {
+    border-radius: 20px;
+}
+
+#post-2{
+    border-radius: 20px;
+
+}
+
+#post-3{
+    border-radius: 20px;
+}
 .cards-container img{
     width: 100%;
     height: 385px;
     object-fit: cover;
 }
 
+.images {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+ a {
+    color:black;
+ }
+
 .browse-posts{
     color: black;
     border: solid 1px #e2e3e9;
-    border-radius: 30px;
+    border-radius: 20px;
     /* padding: 15px; */
     padding: 15px 30px;
     /* padding-top: ;
@@ -68,7 +94,7 @@ body{
 #profile-card-section img{
     height: 200px;
     width: 200px;
-    border-radius: 50%;
+    border-radius: 20%;
     object-fit: cover;
     object-position: top;
 }
@@ -97,6 +123,16 @@ body{
     padding: 10%;
 }
 
+#icons-container span{
+    width: 400px;
+    border-radius: 40%;
+    margin-top: 20px;
+    height: 40px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .d-flex{
     display: flex;
 }
@@ -107,15 +143,6 @@ body{
 
 .w-40{
     width: 40%;
-}
-
-#icons-container span{
-    width: 40px;
-    border-radius: 50%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .w-60{
